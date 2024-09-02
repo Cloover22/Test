@@ -1,0 +1,13 @@
+'''
+[프로그래머스 SQL 고득점 KIT / JOIN]
+없어진 기록 찾기
+
+-> LEFT JOIN + is null 문제
+LEFT JOIN 시킨 후, NULL 인 데이터 찾기
+'''
+
+SELECT A.ANIMAL_ID, A.NAME
+FROM ANIMAL_OUTS AS A
+LEFT JOIN ANIMAL_INS AS B
+ON A.ANIMAL_ID = B.ANIMAL_ID
+WHERE B.INTAKE_CONDITION is null
