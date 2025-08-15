@@ -21,4 +21,10 @@ def solution(name, yearning, photo):
 
     return print(answer)
 
-solution(name, yearning, photo)
+def main():
+    # Example usage of the solution function
+    result = solution(name, yearning, photo)
+    print(result)
+
+if __name__ == "__main__":
+    main()
